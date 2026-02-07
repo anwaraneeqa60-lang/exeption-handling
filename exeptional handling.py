@@ -1,10 +1,10 @@
-def check_age_and_parity():
+def check_age():
     while True:
         try:
             age_input = input("Enter your age: ")
             age = int(age_input)
             if age < 0 or age > 120:
-                print("Error: Please enter a realistic age between 0 and 120.")
+                print("Error: Please enter a proper age between 1 and 100")
                 continue
             else:
                 print(f"Valid age entered: {age}")
@@ -15,4 +15,4 @@ def check_age_and_parity():
                 break
         except ValueError:
             print("Error: Invalid input. Please enter numeric digits.")
-check_age_and_parity()
+check_age()
